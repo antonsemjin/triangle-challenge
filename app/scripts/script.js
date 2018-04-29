@@ -14,8 +14,10 @@ ts.ui.ready(function() {
 		// check if all 3 lengths are specified
 		var allInputsAreFilled = true;
 		$('input').each(function(index, input){
+			$(this).parent().removeClass('ts-error');
 			var inputLength = $(input).val();
 			if (inputLength == ''){
+				$(this).parent().addClass('ts-error');
 				allInputsAreFilled = false;
 			}
 		});
