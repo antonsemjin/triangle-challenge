@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Triangle Challenge</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width"/>
+		<!-- had to remove the integrity attribute from both tags, due to an error, sying: "Failed to find a valid digest in the 'integrity' attribute for resource..." -->
+		<link rel="stylesheet" href="//d5wfroyti11sa.cloudfront.net/prod/client/ts-10.0.22.min.css" crossorigin="anonymous"/>
+		<script src="//d5wfroyti11sa.cloudfront.net/prod/client/ts-10.0.22.min.js" crossorigin="anonymous"></script>
+		<!-- decided to use jQuery, because saw that on the website it often says "Let's try that with jQuery." -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<!-- CSS for adjusting some small styling issues -->
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script src="scripts/script.js" type="text/javascript"></script>
+	</head>
+	<body>
+		<header data-ts="TopBar"></header>
+		<main data-ts="Main">
+			<div data-ts="MainContent">
+				<h1>Triangle Challenge</h1>
+				<h3>Please enter each length of a triangle's side to determine its type</h3>
+				<section>
+					<form data-ts="Form">
+						<fieldset>
+							<label>
+								<span>Length of side <b>a</b></span>
+								<input type="number" id="side-a" />
+							</label>
+							<label>
+								<span>Length of side <b>b</b></span>
+								<input type="number" id="side-b" />
+							</label>
+							<label>
+								<span>Length of side <b>c</b></span>
+								<input type="number" id="side-c" />
+							</label>
+						</fieldset>
+						<button data-ts="Button" data-ts.busy="false" class="ts-primary" id="submit" type="submit">
+							<span>Determine</span>
+						</button>
+					</form>
+				</section>
+			</div>
+		</main>
+	</body>
+</html>

@@ -1,0 +1,38 @@
+body {
+	text-align: center;
+}
+
+// showed an empty menu on mobile
+// so we hide it, because we don't need a menu for such a tiny project...
+header {
+	display: none;
+}
+
+h1 {
+	margin: 20px 0;
+}
+h3 {
+	margin-bottom: 20px;
+}
+
+section {
+	position: relative;
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+	.ts-form {
+		text-align: center;
+		.ts-fieldset {
+			&> label {
+				display: inline-block;
+				width: 200px;
+				input {
+					text-align: center;
+				}
+			}
+		}
+		button {
+			margin-top: 20px;
+		}
+	}
+}
